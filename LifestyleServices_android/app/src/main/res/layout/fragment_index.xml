@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/back"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_send"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/yellow"
+            android:gravity="center">
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/text_circle"
+                android:text="寄"
+                android:textColor="@color/yellow"
+                android:textSize="64px"
+                android:layout_marginRight="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找 人 代 寄"
+                android:textColor="#fff"
+                android:textSize="64px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_receive"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/text_circle"
+                android:text="取"
+                android:textColor="@color/green"
+                android:textSize="64px"
+                android:layout_marginRight="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找 人 代 取"
+                android:textColor="#fff"
+                android:textSize="64px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
