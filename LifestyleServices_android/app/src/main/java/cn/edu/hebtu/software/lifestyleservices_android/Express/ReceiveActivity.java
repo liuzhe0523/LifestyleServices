@@ -10,7 +10,7 @@ public class ReceiveActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_express);
+        setContentView(R.layout.activity_express_receive);
 
     }
 }

@@ -3,8 +3,8 @@ package cn.edu.hebtu.software.lifestyleservices_android;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -23,7 +23,7 @@ import cn.edu.hebtu.software.lifestyleservices_android.Express.OrderFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.SearchFragment;
 
 
-public class ExpressActivity extends AppCompatActivity {
+public class ExpressActivity extends FragmentActivity {
 
     private long mExitTime;
 
@@ -37,7 +37,7 @@ public class ExpressActivity extends AppCompatActivity {
         private void setSelect(boolean b) {
             if (b) {
                 imageView.setImageResource(selectImage);
-                textView.setTextColor(Color.parseColor("#00FF00"));
+                textView.setTextColor(Color.parseColor("#f17d66"));
             } else {
                 imageView.setImageResource(normalImage);
                 textView.setTextColor(Color.parseColor("#000000"));
@@ -93,9 +93,9 @@ public class ExpressActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_express);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(0xff7adfb8);
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            getWindow().setStatusBarColor(0xff7adfb8);
+//        }
         initData();
         setListener();
         changeTab(tabStrId[0]);

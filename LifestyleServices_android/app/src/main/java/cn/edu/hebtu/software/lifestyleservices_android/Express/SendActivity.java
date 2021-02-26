@@ -10,7 +10,7 @@ public class SendActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_express);
+        setContentView(R.layout.activity_express_send);
 
     }
 }
