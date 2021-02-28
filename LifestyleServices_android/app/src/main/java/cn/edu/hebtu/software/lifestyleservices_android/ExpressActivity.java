@@ -1,7 +1,6 @@
 package cn.edu.hebtu.software.lifestyleservices_android;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -20,7 +19,7 @@ import java.util.Map;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.IndexFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.MineFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.OrderFragment;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.SearchFragment;
+import cn.edu.hebtu.software.lifestyleservices_android.Express.enquiry.SearchFragment;
 
 
 public class ExpressActivity extends FragmentActivity {

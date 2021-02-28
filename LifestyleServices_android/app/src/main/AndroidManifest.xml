@@ -20,19 +20,16 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="8" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
 
     <application
         android:allowBackup="true"
+        android:name=".Express.enquiry.MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -45,8 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExpressActivity"></activity>
+        <!--快递-->
         <activity android:name=".TakeoutActivity"></activity>
+
+        <!--外卖-->
+        <activity android:name=".ExpressActivity"></activity>
         <activity android:name=".Express.ReceiveActivity"></activity>
         <activity android:name=".Express.SendActivity"></activity>
 

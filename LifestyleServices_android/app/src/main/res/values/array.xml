@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="delivery_company">
+        <item>顺丰</item>
+        <item>EMS</item>
+        <item>快捷</item>
+    </string-array>
+
+    <string-array name="delivery_company_id">
+        <item>shunfeng</item>
+        <item>ems</item>
+        <item>kuaijiesudi</item>
+    </string-array>
+</resources>
+
+
+
+

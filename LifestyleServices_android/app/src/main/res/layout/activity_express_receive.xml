@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="代 取 快 递 "
-            android:textSize="50px" />
+            android:textSize="30dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +35,9 @@
         android:layout_marginTop="10dp"
         android:layout_weight="2"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
 
         <LinearLayout
             android:id="@+id/ll_address_from"
@@ -51,13 +53,13 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/text_circle_blue"
                     android:gravity="center"
                     android:text="取"
                     android:textColor="@color/white"
-                    android:textSize="35px"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -73,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:text="点击选择取件点"
                     android:textColor="@color/gray2"
-                    android:textSize="25px" />
+                    android:textSize="15dp" />
 
             </LinearLayout>
 
@@ -110,13 +112,13 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/text_circle_yellow"
                     android:gravity="center"
                     android:text="收"
                     android:textColor="@color/white"
-                    android:textSize="35px"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -132,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:text="点击选择我的地址"
                     android:textColor="@color/gray2"
-                    android:textSize="25px" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -140,7 +142,7 @@
                     android:layout_marginTop="5dp"
                     android:text="请输入详细地址，如宿舍楼号、楼层"
                     android:textColor="@color/gray2"
-                    android:textSize="25px" />
+                    android:textSize="13dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -166,7 +168,9 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,13 +180,13 @@
             android:paddingLeft="15dp">
 
             <LinearLayout
-                android:layout_width="25dp"
+                android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:src="@drawable/pickupcode" />
 
             </LinearLayout>
@@ -197,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
                     android:text="取货码"
-                    android:textSize="25px" />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -210,8 +214,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入取货码"
-                    android:paddingLeft="10dp"
-                    android:textSize="20px" />
+                    android:paddingLeft="18dp"
+                    android:textSize="15dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -229,13 +233,13 @@
             android:paddingLeft="15dp">
 
             <LinearLayout
-                android:layout_width="25dp"
+                android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:src="@drawable/name" />
 
             </LinearLayout>
@@ -249,8 +253,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="姓名"
-                    android:textSize="25px" />
+                    android:text="姓   名"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -263,8 +267,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入姓名"
-                    android:paddingLeft="10dp"
-                    android:textSize="20px" />
+                    android:paddingLeft="30dp"
+                    android:textSize="15dp" />
 
             </LinearLayout>
         </LinearLayout>
