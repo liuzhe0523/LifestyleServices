@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#E8E8E8"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="建议投递" />
+
+    <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top"
+            android:hint="建议写下来吧，我们会努力的！"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:text="请选择食堂："
+            android:textColor="@color/red"/>
+
+        <RadioGroup
+            android:id="@+id/rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一食堂"
+                android:textSize="20dp"
+                android:textColor="#c50f57" />
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第二食堂"
+                android:layout_below="@id/rb_1"
+                android:textSize="20dp"
+                android:textColor="#c50f57" />
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第三食堂"
+                android:layout_below="@id/rb_1"
+                android:textSize="20dp"
+                android:textColor="#c50f57" />
+            <RadioButton
+                android:id="@+id/rb_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第四食堂"
+                android:layout_below="@id/rb_1"
+                android:textSize="20dp"
+                android:textColor="#c50f57" />
+            <RadioButton
+                android:id="@+id/rb_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第五食堂"
+                android:layout_below="@id/rb_1"
+                android:textSize="20dp"
+                android:textColor="#c50f57" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/shape"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="提交"/>
+
+</LinearLayout>

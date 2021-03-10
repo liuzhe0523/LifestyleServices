@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#E8E8E8"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="个人中心" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:src="@drawable/touxiang"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_weight="14"
+            android:textSize="20dp"
+            android:text="16867823455"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#7adfb8"
+        android:alpha="0.2"
+        android:layout_margin="15dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/message_t"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/dizhi" />
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:layout_height="match_parent"
+                android:text="我的地址"/>
+
+            <ImageButton
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/xiangxi" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7adfb8"
+            android:alpha="0.2"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/my_tiezi"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/jianyi" />
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:layout_height="match_parent"
+                android:text="建议箱"/>
+
+            <ImageButton
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/xiangxi" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7adfb8"
+            android:alpha="0.2"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/add_child1"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            >
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/zhaopin"
+                />
+            <TextView android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:layout_height="match_parent"
+                android:text="校园招聘"/>
+            <ImageButton
+
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/xiangxi"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7adfb8"
+            android:alpha="0.2"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
