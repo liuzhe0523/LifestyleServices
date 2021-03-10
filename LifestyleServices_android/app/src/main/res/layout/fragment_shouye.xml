@@ -36,7 +36,7 @@
         android:layout_marginBottom="20dp">
         <ImageView
             android:id="@+id/first"
-            android:src="@drawable/firstRes"
+            android:src="@drawable/firsttang"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -44,7 +44,7 @@
         <ImageView
             android:scaleType="centerCrop"
             android:id="@+id/second"
-            android:src="@drawable/secondRes"
+            android:src="@drawable/secondtang"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent" />
@@ -58,7 +58,7 @@
         android:layout_marginBottom="20dp">
         <ImageView
             android:id="@+id/third"
-            android:src="@drawable/thirdRes"
+            android:src="@drawable/thirdtang"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -66,7 +66,7 @@
         <ImageView
             android:scaleType="centerCrop"
             android:id="@+id/forth"
-            android:src="@drawable/forthRes"
+            android:src="@drawable/forthtang"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent" />
@@ -80,7 +80,7 @@
         android:layout_marginBottom="20dp">
         <ImageView
             android:id="@+id/fifth"
-            android:src="@drawable/fifthRes"
+            android:src="@drawable/fifthtang"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
