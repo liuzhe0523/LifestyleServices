@@ -50,7 +50,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="17dp"
-            android:id="@+id/message_t"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp">
 
@@ -60,7 +59,9 @@
                 android:layout_width="30dp"
                 android:background="@drawable/dizhi" />
 
-            <TextView android:layout_width="0dp"
+            <TextView
+                android:id="@+id/my_dizhi"
+                android:layout_width="0dp"
                 android:layout_weight="5"
                 android:textSize="18dp"
                 android:gravity="center_vertical"
@@ -88,7 +89,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="17dp"
-            android:id="@+id/my_tiezi"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp">
 
@@ -98,7 +98,9 @@
                 android:layout_width="30dp"
                 android:background="@drawable/jianyi" />
 
-            <TextView android:layout_width="0dp"
+            <TextView
+                android:id="@+id/my_jianyi"
+                android:layout_width="0dp"
                 android:layout_weight="5"
                 android:textSize="18dp"
                 android:gravity="center_vertical"
@@ -127,8 +129,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="17dp"
-            android:id="@+id/add_child1"
-
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
 
@@ -139,7 +139,9 @@
                 android:layout_width="30dp"
                 android:background="@drawable/zhaopin"
                 />
-            <TextView android:layout_width="0dp"
+            <TextView
+                android:id="@+id/my_zhaopin"
+                android:layout_width="0dp"
                 android:layout_weight="5"
                 android:textSize="18dp"
                 android:gravity="center_vertical"

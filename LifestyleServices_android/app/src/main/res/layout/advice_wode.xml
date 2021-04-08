@@ -87,6 +87,7 @@
         </RadioGroup>
     </LinearLayout>
     <Button
+        android:id="@+id/tijiao"
         android:background="@drawable/shape"
         android:layout_marginBottom="50dp"
         android:layout_gravity="center_horizontal"

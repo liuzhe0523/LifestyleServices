@@ -52,6 +52,7 @@
 
             </LinearLayout>
             <Button
+                android:id="@+id/baoming"
                 android:background="@drawable/shape"
                 android:text="报名"
                 android:layout_gravity="center"

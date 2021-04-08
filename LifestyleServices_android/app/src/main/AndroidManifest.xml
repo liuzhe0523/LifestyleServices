@@ -44,6 +44,9 @@
         </activity>
         <!--快递-->
         <activity android:name=".TakeoutActivity"></activity>
+        <activity android:name=".Takeout.AdviceActivity"></activity>
+        <activity android:name=".Takeout.RecruitActivity"></activity>
+        <activity android:name=".Takeout.ApplyRecruitActivity"></activity>
 
         <!--外卖-->
         <activity android:name=".ExpressActivity"></activity>
