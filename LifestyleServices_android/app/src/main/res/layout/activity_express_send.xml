@@ -8,16 +8,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
         android:background="@color/white">
 
-        <TextView
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="代 寄 快 递 "
-            android:textSize="30dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ll_back">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/leftarrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="代 寄 快 递 "
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,6 +93,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_address_from"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击选择取件点"
@@ -130,19 +153,20 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_address_to"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击选择我的地址"
                     android:textColor="@color/gray2"
                     android:textSize="15dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="请输入详细地址"
-                    android:textColor="@color/gray2"
-                    android:textSize="13dp" />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="请输入详细地址"-->
+                    <!--android:textColor="@color/gray2"-->
+                    <!--android:textSize="13dp" />-->
             </LinearLayout>
 
             <LinearLayout
@@ -211,6 +235,7 @@
                 android:gravity="center_vertical">
 
                 <TextView
+                    android:id="@+id/tv_express_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入取货码"
@@ -264,6 +289,7 @@
                 android:gravity="center_vertical">
 
                 <TextView
+                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入姓名"
@@ -284,6 +310,7 @@
         android:background="@color/white">
 
         <Button
+            android:id="@+id/btn_finish"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"

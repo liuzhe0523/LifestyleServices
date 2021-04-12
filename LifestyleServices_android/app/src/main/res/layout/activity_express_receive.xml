@@ -8,22 +8,106 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
         android:background="@color/white">
 
-        <TextView
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="代 取 快 递 "
-            android:textSize="30dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ll_back">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/leftarrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="代 取 快 递 "
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_order_note_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edt_note_bg"
+                android:gravity="top"
+                android:hint="请输入商品"
+                android:minLines="3"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/gray1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/zhaoxiangji" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/yuyin" />
+            </LinearLayout>
+
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -71,6 +155,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_address_from"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击选择取件点"
@@ -130,19 +215,20 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_address_to"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击选择我的地址"
                     android:textColor="@color/gray2"
                     android:textSize="15dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="请输入详细地址，如宿舍楼号、楼层"
-                    android:textColor="@color/gray2"
-                    android:textSize="13dp" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="请输入详细地址，如宿舍楼号、楼层"-->
+                <!--android:textColor="@color/gray2"-->
+                <!--android:textSize="13dp" />-->
             </LinearLayout>
 
             <LinearLayout
@@ -154,7 +240,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/right_jiantou"/>
+                    android:src="@drawable/right_jiantou" />
             </LinearLayout>
 
         </LinearLayout>
@@ -169,8 +255,8 @@
         android:layout_weight="1"
         android:background="@color/white"
         android:orientation="vertical"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -211,6 +297,7 @@
                 android:gravity="center_vertical">
 
                 <TextView
+                    android:id="@+id/tv_pickupCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入取货码"
@@ -264,6 +351,7 @@
                 android:gravity="center_vertical">
 
                 <TextView
+                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="请输入姓名"
@@ -284,16 +372,17 @@
         android:background="@color/white">
 
         <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:background="@color/yellow"
-            android:text="提   交"
-            android:textColor="@color/white"/>
+            android:text="点 击 下 单"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </LinearLayout>
