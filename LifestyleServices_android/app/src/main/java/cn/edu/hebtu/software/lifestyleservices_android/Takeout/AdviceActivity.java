@@ -14,7 +14,7 @@ public class AdviceActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.advice_wode);
         cheng=findViewById(R.id.tijiao);
-          cheng.setOnClickListener(new View.OnClickListener() {
+        cheng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

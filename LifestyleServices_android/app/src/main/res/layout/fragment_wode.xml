@@ -16,11 +16,12 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:src="@drawable/circle_images"
             android:id="@+id/user_img"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="5"
-            android:src="@drawable/touxiang"
+            android:background="@drawable/touxiang"
             android:scaleType="fitCenter" />
 
         <TextView
@@ -149,14 +150,10 @@
                 android:layout_height="match_parent"
                 android:text="校园招聘"/>
             <ImageButton
-
                 android:layout_height="30dp"
                 android:layout_width="30dp"
-                android:background="@drawable/xiangxi"
-                />
-
+                android:background="@drawable/xiangxi" />
         </LinearLayout>
-
 
         <TextView
             android:layout_width="match_parent"
@@ -164,9 +161,36 @@
             android:background="#7adfb8"
             android:alpha="0.2"
             android:layout_marginLeft="60dp"
-            android:layout_marginRight="15dp"
-            />
+            android:layout_marginRight="15dp" />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
 
+            >
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/shezhi"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:layout_height="match_parent"
+                android:text="设置"/>
+            <ImageButton
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:background="@drawable/xiangxi" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

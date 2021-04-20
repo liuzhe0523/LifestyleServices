@@ -8,7 +8,7 @@
         android:id="@+id/tab_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
+        android:layout_weight="16"
         ></FrameLayout>
     <LinearLayout
         android:id="@+id/tab_widget"
