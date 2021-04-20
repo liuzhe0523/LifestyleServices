@@ -17,10 +17,6 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.edu.hebtu.software.lifestyleservices_android.Express.IndexFragment;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.MineFragment;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.OrderFragment;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.enquiry.SearchFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Takeout.HeadFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Takeout.MyFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Takeout.RecordFragment;

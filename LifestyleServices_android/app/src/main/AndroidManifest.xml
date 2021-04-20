@@ -42,16 +42,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--快递-->
+        <!--外卖-->
         <activity android:name=".TakeoutActivity"></activity>
         <activity android:name=".Takeout.AdviceActivity"></activity>
         <activity android:name=".Takeout.RecruitActivity"></activity>
         <activity android:name=".Takeout.ApplyRecruitActivity"></activity>
         <activity android:name=".Takeout.FoodActivity"></activity>
-        <!--外卖-->
+
+        <!--快递-->
         <activity android:name=".ExpressActivity"></activity>
         <activity android:name=".Express.ReceiveActivity"></activity>
         <activity android:name=".Express.SendActivity"></activity>
+        <activity android:name=".Login.LoginActivity"/>
 
 
     </application>
