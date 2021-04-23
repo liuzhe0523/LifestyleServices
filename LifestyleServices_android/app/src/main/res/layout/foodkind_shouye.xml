@@ -10,20 +10,18 @@
         android:background="#7adfb8"
         android:orientation="horizontal">
 
-        <!--<ImageView
+        <ImageView
             android:id="@+id/iv_return"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="0.3"
             android:paddingBottom="8dp"
-            android:paddingLeft="-20dp"
             android:paddingTop="8dp"
-            android:src="@drawable/fanhui32" />-->
+            android:src="@drawable/left" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="6"
             android:gravity="center"
             android:paddingLeft="-15dp"
             android:text="我要吃饭"
@@ -87,31 +85,51 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <ImageView
-            android:layout_marginTop="10dp"
-            android:src="@drawable/car"
+            android:id="@+id/btn_popup"
             android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:src="@drawable/car" />
         <TextView
-            android:paddingLeft="20dp"
+            android:paddingLeft="15dp"
             android:gravity="center_vertical"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
             android:textColor="#2c2c2c"
             android:textSize="20dp"
-            android:text="共计：0"/>
+            android:text="共计："/>
         <TextView
-            android:paddingLeft="20dp"
-            android:gravity="center_vertical"
-            android:layout_width="0dp"
+            android:id="@+id/cheshu"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="2"
             android:textColor="#2c2c2c"
             android:textSize="20dp"
-            android:text="￥0"/>
+            android:text="0"/>
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#2c2c2c"
+            android:textSize="20dp"
+            android:text="￥"/>
+        <TextView
+           android:id="@+id/chemon"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#2c2c2c"
+            android:textSize="20dp"
+            android:text="0"/>
         <Button
+            android:id="@+id/food_jiesuan"
+            android:layout_marginLeft="10dp"
             android:background="@color/yellow"
             android:layout_width="0dp"
             android:layout_weight="3"

@@ -39,7 +39,7 @@ public class TakeoutActivity extends FragmentActivity {
             if(b) {
                 imageView.setImageResource(selectImage);
                 textView.setTextColor(
-                        Color.parseColor("#00FF00"));
+                        Color.parseColor("#0e932e"));
             } else {
                 imageView.setImageResource(normalImage);
                 textView.setTextColor(
@@ -196,7 +196,7 @@ public class TakeoutActivity extends FragmentActivity {
         map.get(tabStrId[0]).setNormalImage(R.drawable.shouye);
         map.get(tabStrId[0]).setSelectImage(R.drawable.shouye1);
         map.get(tabStrId[1]).setNormalImage(R.drawable.dingdan );
-        map.get(tabStrId[1]).setSelectImage(R.drawable.dingdan1);
+        map.get(tabStrId[1]).setSelectImage(R.drawable.diangdan1);
         map.get(tabStrId[2]).setNormalImage(R.drawable.wode);
         map.get(tabStrId[2]).setSelectImage(R.drawable.wode1);
     }

@@ -27,7 +27,7 @@ public class MyFragment extends Fragment {
         dizhi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getActivity(), AdviceActivity.class);
+                Intent intent=new Intent(getActivity(), AddressActivity.class);
                 startActivity(intent);
             }
         });

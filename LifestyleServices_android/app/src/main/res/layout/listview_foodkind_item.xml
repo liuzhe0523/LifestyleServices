@@ -44,14 +44,37 @@
                 android:layout_weight="2"
                 android:orientation="horizontal">
                 <TextView
+                    android:layout_marginRight="10dp"
+                    android:textColor="#CD0000"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent"
+                    android:text="￥"/>
+                <TextView
+                    android:layout_marginRight="30dp"
                     android:id="@+id/fprice"
                     android:textColor="#CD0000"
                     android:layout_width="60dp"
                     android:textSize="20dp"
                     android:layout_height="match_parent"
-                    android:text="￥10"/>
+                    android:text="10"/>
                 <ImageView
-                    android:layout_marginLeft="120dp"
+                    android:visibility="invisible"
+                    android:id="@+id/jian"
+                    android:src="@drawable/jianhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:id="@+id/geshu"
+                    android:textColor="#2c2c2c"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent"
+                    android:text="0"/>
+                <ImageView
+                    android:id="@+id/jia"
                     android:src="@drawable/jiahao"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" />

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -19,14 +20,22 @@ public class RecruitActivity extends Activity {
     private List<Map<String,Object>> dataSource=null;
     private ListView listView;
     private  RecruitAdapter adapter;
+    private ImageView apply_return;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recruit_wode);
         listView = findViewById(R.id.lv_recruits);
+        apply_return=findViewById(R.id.apply_return);
         initData();
         adapter = new RecruitAdapter(RecruitActivity.this, dataSource, R.layout.listview_recruit_item);
         listView.setAdapter(adapter);
+        apply_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     private  void initData(){

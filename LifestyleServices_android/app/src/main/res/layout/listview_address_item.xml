@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
-    android:layout_height="125dp"
+    android:layout_height="80dp"
     android:orientation="vertical"
-    android:layout_marginBottom="10dp"
+    android:paddingLeft="15dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
@@ -18,25 +15,45 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:textSize="30dp"
+                android:id="@+id/address_dizhi"
+                android:textSize="25dp"
                 android:text="河北师范大学启智园3号楼"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
-            <TextView
-                android:layout_marginTop="20dp"
-                android:textSize="20dp"
-                android:text="12463527955"
-                android:textColor="#8a8a8a"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/address_name"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="王女士"
+                    android:textColor="#707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:id="@+id/address_phone"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="12463527955"
+                    android:textColor="#707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
 
+
+            </LinearLayout>
         </LinearLayout>
         <ImageView
+            android:id="@+id/address_delete"
             android:src="@drawable/shanchu"
             android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="50dp"/>
+            android:layout_height="30dp"/>
     </LinearLayout>
 
 </LinearLayout>

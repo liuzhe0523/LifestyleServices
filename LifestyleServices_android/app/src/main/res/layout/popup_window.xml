@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:id="@+id/li"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="30dp"
+            android:textColor="#2c2c2c"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="已选商品"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/shan"/>
+        <TextView
+            android:id="@+id/clean_order"
+            android:textColor="#bfbfbf"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="清空"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:id="@+id/lv_records"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></ListView>-->
+    <Button
+        android:id="@+id/btn_photo"
+        android:text="拍照"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_select"
+        android:text="从相册选择"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <Button
+
+        android:id="@+id/btn_cancel"
+        android:text="取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

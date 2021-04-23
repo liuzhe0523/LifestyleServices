@@ -29,8 +29,9 @@
                 android:src="@drawable/shouye"
                 android:layout_marginBottom="2dp"
                 android:layout_width="50dp"
-                android:layout_height="30dp" />
+                android:layout_height="40dp" />
             <TextView
+                android:textSize="20dp"
                 android:id="@+id/tv_1"
                 android:text="首页"
                 android:layout_width="wrap_content"
@@ -47,9 +48,10 @@
                 android:id="@+id/img_2"
                 android:src="@drawable/dingdan"
                 android:layout_marginBottom="2dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+                android:layout_width="50dp"
+                android:layout_height="40dp"  />
             <TextView
+                android:textSize="20dp"
                 android:id="@+id/tv_2"
                 android:text="订单"
                 android:layout_width="wrap_content"
@@ -66,9 +68,10 @@
                 android:id="@+id/img_3"
                 android:src="@drawable/wode"
                 android:layout_marginBottom="2dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
             <TextView
+                android:textSize="20dp"
                 android:id="@+id/tv_3"
                 android:text="我的"
                 android:layout_width="wrap_content"

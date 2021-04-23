@@ -19,11 +19,7 @@ import com.youth.banner.Transformer;
 import com.youth.banner.loader.ImageLoader;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import cn.edu.hebtu.software.lifestyleservices_android.R;
-import cn.edu.hebtu.software.lifestyleservices_android.TakeoutActivity;
 
 public class HeadFragment extends Fragment {
     private Banner banner;
