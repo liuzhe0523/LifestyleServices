@@ -2,6 +2,7 @@ package cn.edu.hebtu.software.lifestyleservices_android.Express;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -10,8 +11,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 import cn.edu.hebtu.software.lifestyleservices_android.Express.address.ChangeAddressPopwindow;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class SendActivity extends Activity {
     private LinearLayout lladdressFrom;
@@ -23,7 +32,11 @@ public class SendActivity extends Activity {
     private TextView getTvAddressTo;
     private LinearLayout llBack;
     private EditText edtNotetext;
-
+    private String expressName = "";
+    private String name ="";
+    private String phone = "";
+    private String addressFrom="";
+    private String addressTo="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +62,7 @@ public class SendActivity extends Activity {
             switch (v.getId()) {
                 case R.id.ll_address_from:
                     ChangeAddressPopwindow mChangeAddressPopwindow = new ChangeAddressPopwindow(SendActivity.this);
-                    mChangeAddressPopwindow.setAddress("广东", "深圳", "福田区");
+                    mChangeAddressPopwindow.setAddress("河北", "石家庄", "裕华区");
                     mChangeAddressPopwindow.showAtLocation(tvAddressFrom, Gravity.BOTTOM, 0, 0);
                     mChangeAddressPopwindow
                             .setAddresskListener(new ChangeAddressPopwindow.OnAddressCListener() {
@@ -64,7 +77,7 @@ public class SendActivity extends Activity {
                     break;
                 case R.id.ll_address_to:
                     ChangeAddressPopwindow mChangeAddressPopwindow1 = new ChangeAddressPopwindow(SendActivity.this);
-                    mChangeAddressPopwindow1.setAddress("广东", "深圳", "福田区");
+                    mChangeAddressPopwindow1.setAddress("河北", "石家庄", "裕华区");
                     mChangeAddressPopwindow1.showAtLocation(getTvAddressTo, Gravity.BOTTOM, 0, 0);
                     mChangeAddressPopwindow1
                             .setAddresskListener(new ChangeAddressPopwindow.OnAddressCListener() {
@@ -84,9 +97,10 @@ public class SendActivity extends Activity {
                     tvName.setText("");
                     break;
                 case R.id.btn_finish:
-                    String expressName = tvExpressName.getText().toString();
-                    String name = tvName.getText().toString();
-                    String phone = "";
+                     expressName = tvExpressName.getText().toString();
+                     name = tvName.getText().toString();
+                     phone = "";
+                    receiveExpress();
                     break;
                 case R.id.ll_back:
                     finish();
@@ -96,6 +110,34 @@ public class SendActivity extends Activity {
                     break;
             }
         }
+    }
+
+    private void receiveExpress( ) {
+//        SharedPreferences sp = getSharedPreferences(Constant.SP_NAME, MODE_PRIVATE);
+//        User user = new Gson().fromJson(sp.getString(Constant.USER_KEEP_KEY, Constant.DEFAULT_KEEP_USER), User.class);
+        OkHttpClient okHttpClient = new OkHttpClient();
+        FormBody fb = new FormBody.Builder().add("", phone + "").add("", name + "").add("", expressName + "")
+                .add("",addressFrom+"").add("",addressTo+"").build();
+        Request request = new Request.Builder().url("").post(fb).build();
+        Call call = okHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+            }
+
+            /**
+             * 未完待续
+             * @param call
+             * @param response
+             * @throws IOException
+             */
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String addResponse = response.body().string();
+                Log.e("response", "" + addResponse);
+            }
+        });
     }
 
     public void findview() {

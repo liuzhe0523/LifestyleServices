@@ -56,9 +56,9 @@ public class ChangeAddressPopwindow extends PopupWindow implements View.OnClickL
 	private AddressTextAdapter cityAdapter;
 	private AddressTextAdapter areaAdapter;
 
-	private String strProvince = "广东";
-	private String strCity = "深圳";
-	private String strArea = "福田区";
+	private String strProvince = "河北";
+	private String strCity = "石家庄";
+	private String strArea = "裕华区";
 	private OnAddressCListener onAddressCListener;
 
 	private int maxsize = 14;
@@ -497,7 +497,7 @@ public class ChangeAddressPopwindow extends PopupWindow implements View.OnClickL
 			}
 		}
 		if (noprovince) {
-			strProvince = "广东";
+			strProvince = "河北";
 			return 18;
 		}
 		return provinceIndex;
@@ -523,7 +523,7 @@ public class ChangeAddressPopwindow extends PopupWindow implements View.OnClickL
 			}
 		}
 		if (nocity) {
-			strCity = "深圳";
+			strCity = "石家庄";
 			return 2;
 		}
 		return cityIndex;
@@ -549,7 +549,7 @@ public class ChangeAddressPopwindow extends PopupWindow implements View.OnClickL
 			}
 		}
 		if (noarea) {
-			strArea = "福田区";
+			strArea = "裕华区";
 			return 1;
 		}
 		return areaIndex;
