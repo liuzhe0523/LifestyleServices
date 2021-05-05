@@ -5,69 +5,68 @@
     android:background="@color/gray"
     android:orientation="vertical">
 
-    <LinearLayout
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/white">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_back"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/leftarrow" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="9"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="订 单 管 理 "-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="30dp" />-->
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/white">
+        android:background="#fff"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/ll_back"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_edit_center_exit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left_exit" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/leftarrow" />
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订 单 管 理"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="订 单 管 理 "
-                android:textColor="@color/black"
-                android:textSize="30dp" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
-        <!--<ListView-->
-            <!--android:id="@+id/lv_order"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"></ListView>-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <LinearLayout
-                android:layout_width="150dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/orderitem1" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:background="#FFFFFF"></ListView>
 
 </LinearLayout>

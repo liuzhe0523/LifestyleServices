@@ -2,6 +2,7 @@ package cn.edu.hebtu.software.lifestyleservices_android.Express;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 import java.io.IOException;
 
 import cn.edu.hebtu.software.lifestyleservices_android.Express.address.ChangeAddressPopwindow;
+import cn.edu.hebtu.software.lifestyleservices_android.Express.util.CustomDialogFinish;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -22,7 +24,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class SendActivity extends Activity {
+public class SendActivity extends AppCompatActivity{
     private LinearLayout lladdressFrom;
     private LinearLayout lladdressTo;
     private TextView tvExpressName;
@@ -100,7 +102,10 @@ public class SendActivity extends Activity {
                      expressName = tvExpressName.getText().toString();
                      name = tvName.getText().toString();
                      phone = "";
-                    receiveExpress();
+                    CustomDialogFinish dialog=new CustomDialogFinish(SendActivity.this);
+                    dialog.setCancelable(false);
+                    dialog.show(getSupportFragmentManager(),"send");
+                     //receiveExpress();
                     break;
                 case R.id.ll_back:
                     finish();

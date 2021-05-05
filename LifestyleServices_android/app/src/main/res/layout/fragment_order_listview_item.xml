@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/gray"
-    android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_order"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:background="@drawable/o1" />
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_order_name"
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:textColor="#00002f"
+                android:text="花匠集·北欧风ins进口藤编休闲椅"/>
+
+            <TextView
+                android:id="@+id/tv_order_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="取件（国培——启智园）"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:id="@+id/btn_jiedan"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="接 单"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@drawable/btn_jiedan"
+            android:textColor="#000055" />
+    </LinearLayout>
 
 
 </LinearLayout>

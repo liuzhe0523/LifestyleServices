@@ -24,7 +24,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import cn.edu.hebtu.software.lifestyleservices_android.Express.mine.FeedbackActivity;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.util.DataCleanManager;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 
@@ -59,8 +58,8 @@ public class MineFragment extends Fragment {
          rlSuggest.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent intent = new Intent(newView.getContext(), FeedbackActivity.class);
-                 startActivity(intent);
+//                 Intent intent = new Intent(newView.getContext(), FeedbackActivity.class);
+//                 startActivity(intent);
              }
          });
 

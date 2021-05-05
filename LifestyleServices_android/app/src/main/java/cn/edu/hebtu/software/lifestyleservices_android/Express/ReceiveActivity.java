@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -17,6 +18,7 @@ import com.google.gson.Gson;
 import java.io.IOException;
 
 import cn.edu.hebtu.software.lifestyleservices_android.Express.address.ChangeAddressPopwindow;
+import cn.edu.hebtu.software.lifestyleservices_android.Express.util.CustomDialogFinish;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -25,7 +27,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class ReceiveActivity extends Activity {
+public class ReceiveActivity extends AppCompatActivity {
 
     private LinearLayout lladdressFrom;
     private LinearLayout lladdressTo;
@@ -107,7 +109,10 @@ public class ReceiveActivity extends Activity {
                     pickupCode = tvPickupCode.getText().toString();
                     name = tvName.getText().toString();
                     phone = "";
-                    sendExpress();
+                    CustomDialogFinish dialog=new CustomDialogFinish(ReceiveActivity.this);
+                    dialog.setCancelable(false);
+                    dialog.show(getSupportFragmentManager(),"receive");
+                    //sendExpress();
                     break;
                 case R.id.ll_back:
                     finish();
