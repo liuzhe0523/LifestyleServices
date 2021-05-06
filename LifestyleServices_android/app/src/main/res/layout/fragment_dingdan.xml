@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#E8E8E8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,8 +24,7 @@
 
     <ListView
         android:layout_marginTop="15dp"
-        android:background="#E8E8E8"
-        android:id="@+id/lv_records"
+        android:id="@+id/ding_records"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"></ListView>
