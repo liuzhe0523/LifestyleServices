@@ -87,7 +87,7 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
     public static final String FEEDBACK_KEEP_SP_NAME = "Feedback_keep";
     public static final String FEEDBACK_POST_KEEP_CONTENT_KEY = "contentKeep";
     public static final String FEEDBACK_POST_KEEP_TYPE_KEY = "typeKeep";
-    public static final String CON_POST_FEEDBACK_IP = BASE_URL + "mail/report";
+    public static final String CON_POST_FEEDBACK_IP = "mail/report";
     private static final int READ_OK = 100;
     private static final int POST_ACHIEVE = 2019;
     private ImageViewer iver;
