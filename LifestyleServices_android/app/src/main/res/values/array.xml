@@ -2,12 +2,22 @@
 <resources>
     <string-array name="delivery_company">
         <item>顺丰</item>
+        <item>圆通</item>
+        <item>中通</item>
+        <item>邮政</item>
+        <item>百世</item>
+        <item>京东</item>
         <item>EMS</item>
         <item>快捷</item>
     </string-array>
 
     <string-array name="delivery_company_id">
         <item>shunfeng</item>
+        <item>yuantong</item>
+        <item>zhongtong</item>
+        <item>youzhengguonei</item>
+        <item>huitongkuaidi</item>
+        <item>jd</item>
         <item>ems</item>
         <item>kuaijiesudi</item>
     </string-array>

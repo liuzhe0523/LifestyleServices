@@ -13,12 +13,12 @@
         android:paddingLeft="10dp"
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/iv_edit_center_exit"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/left_exit" />
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_edit_center_exit"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/left_exit" />-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,24 +46,27 @@
         android:layout_height="50dp"
         android:layout_margin="5dp"
         android:hint="@string/please_enter_delivery_no"
-        android:textColorHint="@color/yellow"
+        android:textColorHint="#FFA000"
         android:inputType="number"/>
 
     <Button
         android:id="@+id/query_button"
         android:layout_gravity="center"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_margin="5dp"
         android:text="@string/query"
         android:textSize="16dp"
-        android:background="@drawable/btn_jiedan"/>
+        android:textColor="#fff"
+        android:background="@drawable/exit_button_border"/>
 
     <ListView
+        android:layout_marginTop="10dp"
         android:id="@+id/messages_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:listSelector="@android:color/transparent"/>
+
 </LinearLayout>

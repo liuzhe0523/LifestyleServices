@@ -1,7 +1,6 @@
-package cn.edu.hebtu.software.lifestyleservices_android.Express.Order;
+package cn.edu.hebtu.software.lifestyleservices_android.Express.Mine;
 
 import android.app.Activity;
-import android.app.FragmentManager;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -13,21 +12,20 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-
 import java.util.List;
 import java.util.Map;
 
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 
 
-public class OrderAdapter extends BaseAdapter {
+public class MyOrderAdapter extends BaseAdapter {
     private PopupWindow popupWindow = null;
     private View popupView = null;
     private List<Map<String,Object>> dataSource=null;
     private Context context;
     private Activity activity;
     private int item_layout_id;
-    public OrderAdapter(Context context, List<Map<String,Object>> dataSource, int item_layout_id, Activity activity){
+    public MyOrderAdapter(Context context, List<Map<String,Object>> dataSource, int item_layout_id, Activity activity){
         this.context=context;
         this.dataSource=dataSource;
         this.activity=activity;
@@ -55,13 +53,11 @@ public class OrderAdapter extends BaseAdapter {
         ImageView img=  newView.findViewById(R.id.img_order);
         TextView  name=  newView.findViewById(R.id.tv_order_name);
         TextView address=newView.findViewById(R.id.tv_order_address);
-        TextView users=newView.findViewById(R.id.tv_user);
         Button btn=newView.findViewById(R.id.btn_jiedan);
         final Map<String,Object> map=dataSource.get(position);
         img.setImageResource ((int)map.get("img"));;
         name.setText(map.get("name").toString());
         address.setText(map.get("address").toString());
-        users.setText(map.get("users").toString());
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

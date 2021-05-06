@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import cn.edu.hebtu.software.lifestyleservices_android.Express.IndexFragment;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.MineFragment;
+import cn.edu.hebtu.software.lifestyleservices_android.Express.Mine.MineFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.Order.OrderFragment;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.enquiry.SearchFragment;
 

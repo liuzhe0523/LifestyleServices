@@ -56,6 +56,8 @@
         <activity android:name=".ExpressActivity"></activity>
         <activity android:name=".Express.ReceiveActivity"></activity>
         <activity android:name=".Express.SendActivity"></activity>
+        <activity android:name=".Express.Mine.MineOrderActivity"/>
+        <activity android:name=".Express.Mine.FeedbackActivity"/>
 
 
 

@@ -6,8 +6,12 @@
 
     <!--快递查询-->
     <string name="please_enter_delivery_no">请输入快递单号</string>
-    <string name="query">查询</string>
+    <string name="query">查 询</string>
     <string name="query_url">http://www.kuaidi100.com/query</string>
+
+    <string name="glide_plus_icon_string">android.resource://</string>
+    <string name="post_delete_tv_d">拖动到此处，进行删除</string>
+    <string name="post_delete_tv_s"> 放开手指，进行删除</string>
 
 </resources>
 

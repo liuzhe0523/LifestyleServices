@@ -30,7 +30,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/rl_edit_center_mine_order"
+        android:id="@+id/rl_edit_center_my_order"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="#fff">
@@ -253,7 +253,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/exit_button_border"
         android:text="安全退出登录"

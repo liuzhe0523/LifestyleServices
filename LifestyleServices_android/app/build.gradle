@@ -16,6 +16,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { url "https://dl.bintray.com/albertlii/android-maven/" }
 }
 
 dependencies {
@@ -35,5 +48,20 @@ dependencies {
     implementation 'com.youth.banner:banner:1.4.9'
     //glide
     implementation "com.github.bumptech.glide:glide:4.6.1"
+    //Recyclerview
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    // imageViewer 图片查看器
+    implementation 'indi.liyi.view:image-viewer:3.0.1'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.8.0"
+    //datePicker
+    implementation 'com.wdullaer:materialdatetimepicker:3.6.4'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.45'
+    implementation 'com.yuyh.imgsel:library:2.0.6'
+    implementation files('libs/Msc.jar')
+    // 图片推动
+    implementation 'com.facebook.fresco:fresco:0.13.0'
+    implementation 'top.zibin:Luban:1.1.1'
+    implementation 'com.kuyue:utils:1.0.8'
+    implementation 'com.android.support:multidex:1.0.3'
 
 }

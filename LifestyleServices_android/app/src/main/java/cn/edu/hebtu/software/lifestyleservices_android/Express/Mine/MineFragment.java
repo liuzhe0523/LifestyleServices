@@ -1,4 +1,5 @@
-package cn.edu.hebtu.software.lifestyleservices_android.Express;
+package cn.edu.hebtu.software.lifestyleservices_android.Express.Mine;
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,15 +21,24 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import cn.edu.hebtu.software.lifestyleservices_android.Express.Order.OrderAdapter;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.util.DataCleanManager;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 
 
 public class MineFragment extends Fragment {
+    //我的订单
+    private RelativeLayout rlMyOrder;
     //编辑资料
     private RelativeLayout rlChangeMsg;
     //推荐给好友
@@ -53,6 +63,15 @@ public class MineFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View newView = inflater.inflate(R.layout.fragment_mine, container, false );
         findViews(newView);
+        //我的订单
+        rlMyOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),MineOrderActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         //意见反馈
          rlSuggest.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +155,7 @@ public class MineFragment extends Fragment {
 //    }
 
     private void findViews(View view) {
+        rlMyOrder=view.findViewById(R.id.rl_edit_center_my_order);
         rlChangeMsg = view.findViewById(R.id.rl_edit_center_change_my_msg);
         rlShare = view.findViewById(R.id.rl_edit_center_share);
         rlSuggest =view. findViewById(R.id.rl_edit_center_back_suggest);
