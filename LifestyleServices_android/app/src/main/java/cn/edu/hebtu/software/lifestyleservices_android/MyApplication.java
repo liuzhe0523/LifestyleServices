@@ -1,4 +1,4 @@
-package cn.edu.hebtu.software.lifestyleservices_android.Express.util;
+package cn.edu.hebtu.software.lifestyleservices_android;
 
 import android.app.Application;
 import android.content.Context;
@@ -12,6 +12,7 @@ import cn.jpush.android.api.JPushInterface;
 public class MyApplication extends Application {
 
     private static MyApplication app;
+
     private Context mContext;
 
     public static MyApplication getInstance() {

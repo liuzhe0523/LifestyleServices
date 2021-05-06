@@ -24,6 +24,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,14 +35,12 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.google.gson.Gson;
 import com.hys.utils.AppUtils;
 import com.hys.utils.DensityUtils;
@@ -58,12 +57,11 @@ import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import cn.edu.hebtu.software.lifestyleservices_android.Express.util.MyApplication;
-import cn.edu.hebtu.software.lifestyleservices_android.Express.util.StatusBarUtil;
+import cn.edu.hebtu.software.lifestyleservices_android.MyApplication;
+import cn.edu.hebtu.software.lifestyleservices_android.Express.util.PhotoLoader;
+//import cn.edu.hebtu.software.lifestyleservices_android.Express.util.StatusBarUtil;
 import cn.edu.hebtu.software.lifestyleservices_android.Express.util.ViewDataUtils;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 import indi.liyi.viewer.ImageViewer;
@@ -92,7 +90,7 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
     private static final int POST_ACHIEVE = 2019;
     private ImageViewer iver;
     private Dialog dialog;
-    public static final String FILE_DIR_NAME = "cn.edu.hebtu.software.listendemo";//应用缓存地址
+    public static final String FILE_DIR_NAME = "cn.edu.hebtu.software.lifestyleservices_android";//应用缓存地址
     public static final String FILE_IMG_NAME = "images";//放置图片缓存
     public static final int IMAGE_SIZE = 6;//可添加图片最大数
     private static final int REQUEST_IMAGE = 1002;
@@ -132,8 +130,8 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activit_post_feedback);
-        StatusBarUtil.statusBarLightMode(this);
-        StatusBarUtil.setStatusBarColor(this, R.color.white);
+        //StatusBarUtil.statusBarLightMode(this);
+      //  StatusBarUtil.setStatusBarColor(this, R.color.white);
         // 自定义图片加载器
         ISNav.getInstance().init(new ImageLoader() {
             @Override
@@ -151,9 +149,10 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
 
     private void marginTopStateBar() {
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        layoutParams.topMargin = StatusBarUtil.getStatusBarHeight(this);
+       // layoutParams.topMargin = StatusBarUtil.getStatusBarHeight(this);
         rlOut.setLayoutParams(layoutParams);
     }
+
     private void initData() {
         sp = getSharedPreferences(FEEDBACK_KEEP_SP_NAME, MODE_PRIVATE);
         // 获取原始资源数据
@@ -628,6 +627,7 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
             Bitmap newBitmap;
             int addIndex = originImages.size() - 1;
             for (int i = 0; i < images.size(); i++) {
+                Log.e("rrr",MyApplication.getInstance()+"");
                 if (images.get(i).contains(MyApplication.getInstance().getString(R.string.glide_plus_icon_string))) {//说明是添加图片按钮
                     continue;
                 }

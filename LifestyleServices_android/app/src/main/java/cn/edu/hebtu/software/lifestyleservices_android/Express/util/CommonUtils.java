@@ -1,6 +1,8 @@
 package cn.edu.hebtu.software.lifestyleservices_android.Express.util;
 
 
+import cn.edu.hebtu.software.lifestyleservices_android.MyApplication;
+
 /**
  * 公共工具类
  **/

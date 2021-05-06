@@ -77,8 +77,8 @@ public class MineFragment extends Fragment {
          rlSuggest.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-//                 Intent intent = new Intent(newView.getContext(), FeedbackActivity.class);
-//                 startActivity(intent);
+                 Intent intent = new Intent(newView.getContext(), FeedbackActivity.class);
+                 startActivity(intent);
              }
          });
 
