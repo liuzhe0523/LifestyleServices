@@ -21,7 +21,7 @@ import cn.edu.hebtu.software.lifestyleservices_android.R;
 
 public class ConfirmOrderActivity extends Activity {
     private List<Map<String,Object>> dataSource;
-    List<Map<String,Object>> updateData=new ArrayList<>();
+    public  List<Map<String,Object>> updateData=new ArrayList<>();
     private ListView listView;
     private FoodOrderAdapter adapter;
     private ImageView con_return;
@@ -93,7 +93,7 @@ public class ConfirmOrderActivity extends Activity {
         con_chu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               finish();
+              finish();
             }
         });
     }

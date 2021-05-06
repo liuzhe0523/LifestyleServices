@@ -11,10 +11,12 @@ import android.view.ViewGroup;
 import cn.edu.hebtu.software.lifestyleservices_android.R;
 
 public class RecordFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View newView = inflater.inflate(R.layout.fragment_dingdan, container, false );
+
         return newView;
 
     }
